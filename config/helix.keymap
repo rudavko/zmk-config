@@ -30,13 +30,13 @@ As such, those are in use within the default layer at this time.*/
  // |  TAB           |   Q         |   W         |   E         |   R                |   T         |                                         |   Y         |   U         |   I         |   O         |   P         |  BSPC       |
  // |  CTRL/ESC      |   A         |   S         |   D         |   F                |   G         |                                         |   H         |   J         |   K         |   L         |   ;         |   '         |
  // |  SHIFT         |   Z         |   X         |   C         |   V                |   B         | LBKT        |             |  RBKT       |   N         |   M         |   ,         |   .         |   /         |  RSHIFT     |
- // |  ADJUST        |  ESC        |  ALT        |  LGUI       | LOWER SPACE        | LOWER       | SPACE       |             |  SPACE      | RAISE       |  KANA       |  LEFT       |  DOWN       |  UP         |  RIGHT      |
+ // |  ADJUST        |  ESC        |  ALT        |  LGUI       | LOWER SPACE        | LOWER       | PSCRN       |             |  SPACE      | RAISE       |  KANA       |  LEFT       |  DOWN       |  UP         |  RIGHT      |
                      bindings = <
        &kp GRAVE      &kp N1       &kp N2        &kp N3        &kp N4                &kp N5                                                 &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &kp DEL
        &kp TAB        &kp Q        &kp W         &kp E         &kp R                 &kp T                                                  &kp Y         &kp U         &kp I         &kp O         &kp P         &kp BSPC
        &mt LCTRL ESC  &kp A        &kp S         &kp D         &kp F                 &kp G                                                  &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SQT
        &kp LSHFT      &kp Z        &kp X         &kp C         &kp V                 &kp B        &kp LBKT                    &kp RBKT      &kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH     &kp RSHIFT
-       &mo ADJUST     &kp ESC      &kp LALT      &kp LGUI      &lt LOWER SPACE      &mo LOWER    &kp SPACE                   &kp SPACE     &mo RAISE     &lt RAISE RET &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
+       &mo ADJUST     &kp ESC      &kp LALT      &kp LGUI      &lt LOWER SPACE      &mo LOWER     &kp PSCRN                   &kp SPACE     &mo RAISE      &lt RAISE RET &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
                      >;
               };
               lower_layer {
@@ -59,13 +59,13 @@ As such, those are in use within the default layer at this time.*/
  // |                |             |             |             |                    |             |                                         |             |             |             |             |             |             |
  // |   `            |   1         |   2         |   3         |   4                |   5         |                                         |   6         |   7         |   8         |   9         |   0         |  DEL        |
  // |                |  F1         |  F2         |  F3         |  F4                |  F5         |                                         |  F6         |   -         |   =         |   [         |   ]         |   \         |
- // |                |  F7         |  F8         |  F9         |  F10               |  F11        |             |             |             |  F12        |             | PSCRN       | PG_DN       | PG_UP       |             |
+ // |                |  F7         |  F8         |  F9         |  F10               |  F11        |             |             |             |  F12        | DEL         | BSPC        | PG_DN       | PG_UP       |             |
  // |                |             |             |             |                    |             |             |             |             |             |             | NEXT        | VOL-        | VOL+        | PLAY        |
                      bindings = <
        &trans        &trans        &trans        &trans        &trans               &trans                                                  &trans        &trans        &trans        &trans        &trans        &trans
        &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp N4               &kp N5                                                  &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &kp DEL
-       &trans        &kp F1        &kp F2        &kp F3        &kp F4               &kp F5                                                  &kp F6        &kp MINUS     &kp LEFT      &kp UP        &kp RIGHT     &kp BSLH
-       &trans        &kp F7        &kp F8        &kp F9        &kp F10              &kp F11       &trans                      &trans        &kp F12       &trans        &kp PSCRN     &kp PG_DN     &kp PG_UP     &trans
+       &trans        &kp F1        &kp F2        &kp F3        &kp F4               &kp F5                                                  &kp F6        &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSLH
+       &trans        &kp F7        &kp F8        &kp F9        &kp F10              &kp F11       &trans                      &trans        &kp F12       &kp DEL       &kp BSPC      &kp PG_DN     &kp PG_UP     &trans
        &trans        &trans        &trans        &trans        &trans               &trans        &trans                      &trans        &trans        &trans        &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
                      >;
               };
